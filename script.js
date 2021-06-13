@@ -1,4 +1,4 @@
-fetch('https://raw.githubusercontent.com/xavitinho/xavitinho.github.io/main/teste.json')
+fetch('https://raw.githubusercontent.com/xavitinho/gamerfilobot/main/store.json')
   .then(response => response.json())
   .then(jsonResponse => {
 
