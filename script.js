@@ -43,8 +43,9 @@ function selectPage(end) {
   column2.innerHTML = ''
   column2.style.msFlex = "50%";
   column2.style.flex = "50%";
-
+  let col = 0
   for(let i = end; i > end-np && i > -1; i--){
+    
     if(!store.posts[i].deleted){
       
       post = store.posts[i]
@@ -52,10 +53,12 @@ function selectPage(end) {
       let card = document.createElement('div')
       card.className = "card"
 
-      if(i%2 > 0){
+      if(col === 0){
         column1.appendChild(card)
+        col ++
       } else {
         column2.appendChild(card)
+        col = 0
       }
       
       let image = document.createElement('div')
