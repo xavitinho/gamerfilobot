@@ -2,7 +2,7 @@
 var store
 var np = 8// numero de posts por pagina
 
-var URL = 'https://testehtml.xaax.repl.co/'
+var URL = 'https://xavitinho.github.io/gamerfilobot/'
 
 var posts = []
 
